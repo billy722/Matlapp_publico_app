@@ -46,24 +46,54 @@ class PaginaInicial extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  height: 200,
-                  width: 200,
-                  child: Image.asset(
-                      'lib/assets/images/bienvenida/icono_entrada.png'),
+                Expanded(
+                  child: Container(
+                    // color: Colors.amber,
+                    height: 130,
+                    width: 130,
+                    child: Image.asset(
+                        'lib/assets/images/bienvenida/icono_entrada.png'),
+                  ),
                 ),
-                Container(
-                  height: 200,
-                  width: 200,
-                  child: Image.asset(
-                      'lib/assets/images/bienvenida/isologotipo_app.png'),
+                Expanded(
+                  child: Container(
+                    // color: Colors.amber,
+                    height: 470,
+                    width: 470,
+                    child: Image.asset(
+                        'lib/assets/images/bienvenida/isologotipo_app.png'),
+                  ),
                 ),
-                Container(
-                  height: 200,
-                  width: 200,
-                  child: Image.asset(
-                      'lib/assets/images/bienvenida/aprende_jugando_tarjeta.png'),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    // color: Colors.amber,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Stack(
+                          fit: StackFit.loose,
+                          alignment: Alignment.center,
+                          children: <Widget>[
+                            Container(
+                              height: 400,
+                              width: 400,
+                              child: Image.asset(
+                                  'lib/assets/images/bienvenida/aprende_jugando_tarjeta.png'),
+                            ),
+                            Container(
+                              height: 80,
+                              width: 80,
+                              child: Image.asset(
+                                  'lib/assets/images/bienvenida/boton_play_jugar.png'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
